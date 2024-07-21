@@ -1,0 +1,436 @@
+{
+    "globalConfiguration": {
+        "seed": "random",
+        "targetType": "reactnative-ios",
+        "runtimeEnvironmentCheck": false,
+        "autoIgnoreIdentifiers": true,
+
+//      "importFile": "",
+//      "exportFile": "",
+
+        "preserveFunctions": false,
+
+//      Please refer to documentation if you want to use ephemeral mode.
+//      "ephemeralMode": "",
+        "licenseRegion": "NorthAmerica",
+
+//      appID defines how the applications App Aware data is stored.
+//      The value is auto-generated based on input files if left unspecified.
+//      "appID": "myAppID",
+
+        "ignoreGlobals": false
+    },
+
+    "debugMode": {
+        "enable": false,
+        "refreshRate": 3000,
+        "domOutput": false
+    },
+
+    "appAware": {
+        "enable": true,
+        "endpointURL": "auto",
+        "applicationToken": "auto",
+        "getInstallIDCallback": "",
+        "mappingFileOutputFolder": "",
+        "fullReporting": false,
+//      "appInstanceIdentifierGetter": "getAppIdentifier",
+
+//      Custom data fields can be added to all App Aware messages.
+//      Please refer to documentation if you want to use this feature.
+//      "customDataFields": {
+//          "fieldName": {
+//              "valueCallback": "callbackFunctionName"
+//          }
+//      }
+    },
+
+    "reactions": {
+        "myCallbackAction": {
+            "type": "callback",
+            "function": "myFunction",
+            "validate": false,
+            "promise": false
+        },
+
+//      Only applicable when target type is Cordova-Android or Cordova-iOS
+//      "myRedirectAction": {
+//          "type": "redirect",
+//          "url": "./pagenotfound.html",
+//          "allowReturn": false
+//      },
+
+//      Only applicable when target type is Cordova-Android or Cordova-iOS
+//      "myDeleteCookiesAction": {
+//          "type": "deleteCookies",
+//          "cookies": [ "cookie1", "cookie2" ]
+//      },
+
+        "myEmptyAction": {
+            "type": "noAction"
+        },
+
+        "myTerminateAppAction": {
+            "type": "terminateApp",
+        }
+    },
+
+    "invocationLocations": {
+        "invocationFromFunction": {
+            "type": "function",
+            "name": "invocationFunctionName",
+            "validate": false
+        },
+
+        "autoInvocation": {
+            "type": "auto"
+        }
+    },
+
+    "debugTiming": {
+        "enable": false,
+        "initialDelay": 1,
+        "interval": 5
+    },
+
+    "guardConfigurations": {
+        "guard_configuration_1": {
+            "protectionPreset": "normal",
+            "identifierRenaming": {
+                "enable": true,                
+                "scheme": "short",
+                "characterSet": "Ascii-Extended",
+                "ignore": [],
+                "mapping": {},
+//              "modifier": {
+//                  "positions": ["prefix", "postfix", "infix"],
+//                  "strings": ["ab", "cd", "ef"],
+//                  "scope": "global" // "all"
+//              }
+            },
+
+            "stringEncryption": {
+                "enable": true,
+                "forceStrong": [],
+                "forceFast": [],
+                "exclude": [],
+                "protectionCoverage": 90,
+                "protectionStrength": 5,
+                "cachePercentage": 100,
+                "maxLength": 64,
+                "enforceContext": false,
+                "uniqueCacheIdentifiers": true,
+                "variations": "full"
+            },
+
+            "algorithmCorruption": {
+                "enable": false,
+                "coverage": 20
+            },
+
+            "operatorRemoval": {
+                "enable": true,
+                "protectionCoverage": 90,
+                "protectionStrength": 5
+            },
+
+            "externalHiding": {
+                "enable": true
+            },
+
+            "numericLiteralHiding": {
+                "enable": true,
+                "extendedNumericLiteralHiding": true,
+                "protectionCoverage": 90,
+                "protectionStrength": 5,
+                "cachePercentage": 100,
+                "uniqueCacheIdentifiers": true
+            },
+
+            "controlFlowFlattening": {
+                "enable": true,
+                "mode": "Basic",
+//              "functionalStatementCount": 5,
+//              "protectionStrength": 0,
+                "targetCaseCount": 10,
+                "minFunctionSize": 3
+            },
+
+            "dataIntegrity": {
+                "enable": false
+            },
+
+            "checksum": [
+                {
+                    "name": "Checksum First Instance",
+                    "enable": false,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "excludeFunctions": [],
+                    "includeFunctions": [],
+                    "protectionCoverage": 20,
+                    "inliningLevel": 5,
+                    "validityPeriod": 1000,
+                    "immediateAction": false,
+                    "mapping": {
+                        "enable": false,
+                        "directory": ""
+                    }
+                },
+//              {
+//                  "name": "Checksum Second Instance",
+//                  "enable": false,
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "excludeFunctions": [],
+//                  "includeFunctions": [],
+//                  "protectionCoverage": 20,
+//                  "inliningLevel": 5,
+//                  "validityPeriod": 1000,
+//                  "immediateAction": false,
+//                  "mapping": {
+//                      "enable": false,
+//                      "directory": ""
+//                  }
+//              }
+            ],
+
+
+            "scriptVerification": [
+                {
+                    "name": "SV Auto Instance",
+                    "enable": false,
+                    "excludeScripts": [],
+//                  "includeScripts": [],
+                    "externalScripts": [],
+                    "validateExternalScriptUsage": true,
+                    "mode": "batch",
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "immediateAction": false,
+                    "invocationLocations": "auto"
+                },
+//              {
+//                  "name": "SV Function Invoked Instance",
+//                  "enable": false,
+//                  "excludeScripts": [],
+//                  "includeScripts": [],
+//                  "externalScripts": [],
+//                  "validateExternalScriptUsage": true,
+//                  "mode": "batch",
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "immediateAction": false,
+//                  "invocationLocations": ["invocationFromFunction", "mySecondFunction"]
+//              }
+            ],
+
+            "debugDetection": [
+                {
+                    "name": "DD Auto Instance",
+                    "enable": false,
+                    "immediateAction": false,
+                    "infiniteDebuggerLoop": true,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+//                  Allowed only on cordova (browser-like) targets
+                    "detectionTechnique": "global",
+                    "invocationLocations": "auto"
+                },
+//              {
+//                  "name": "DD Function Invoked Instance",
+//                  "enable": false,
+//                  "immediateAction": false,
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "invocationLocations": ["invocationFromFunction", "mySecondFunction"]
+//              }
+            ],
+
+            "minification": {
+                "enable": true
+            },
+
+            "inAppFirewall": {
+                "enable": false,
+//              "acceptedDomains": ["*.digital.ai"],
+                "tamperAction": "",
+                "nonTamperAction": "",
+                "blockUnauthorizedRequests": false,
+                "immediateAction": false
+            },
+
+            "automationDetection": [
+                {
+                    "name": "AD Auto Instance",
+                    "enable": false,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "immediateAction": false,
+                    "invocationLocations": "auto"
+                },
+//              {
+//                  "name": "AD Function Invoked Instance",
+//                  "enable": false,
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "immediateAction": false,
+//                  "invocationLocations": ["invocationFromFunction", "mySecondFunction"]
+//              }
+            ],
+
+            "timeLock": [
+                {
+                    "name": "TL Auto Instance",
+                    "enable": false,
+//                  "timestamp": 1835439837,
+//                  "timestamp": "2028-02-29 12:23:57",
+                    "interval": 600,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "immediateAction": false,
+                    "invocationLocations": "auto",
+
+                    "serverTime": {
+                        "enable": false,
+//                      "requestURLs": ["http://my_site.com/any/response"],
+                        "requestTimeout": 5,
+                        "requestRetries": 1,
+                        "requestFailedAction": ""
+                    }
+                },
+//              {
+//                  "name": "TL Function Invoked Instance",
+//                  "enable": false,
+//                  "timestamp": 1835439837,
+//                  "timestamp": "2028-02-29 12:23:57",
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "immediateAction": false,
+//                  "invocationLocations": ["invocationFromFunction", "mySecondFunction"],
+
+//                  "serverTime": {
+//                      "enable": false,
+//                      "requestURLs": ["http://my_site.com/any/response"],
+//                      "requestTimeout": 5,
+//                      "requestRetries": 1,
+//                      "requestFailedAction": ""
+//                  }
+//              }
+            ],
+
+            "hookDetection": [
+                {
+                    "name": "HD First Instance",
+                    "enable": false,
+//                  "functions": [],
+                    "validate": true,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "blockUnauthorizedHooks": false,
+                    "immediateAction": false
+                },
+//              {
+//                  "name": "HD Second Instance",
+//                  "enable": false,
+//                  "functions": [],
+//                  "validate": true,
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "blockUnauthorizedHooks": false,
+//                  "immediateAction": false
+//              }
+            ],
+            
+            "codeLiftingDetection": [
+                {
+                    "name": "CLD Auto Instance",
+                    "enable": false,
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "immediateAction": false,
+                    "invocationLocations": "auto"
+                },
+//              {
+//                  "name": "CLD Function Invoked Instance",
+//                  "enable": false,
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "immediateAction": false,
+//                  "invocationLocations": ["invocationFromFunction", "mySecondFunction"]
+//              }
+            ],
+
+            "subresourceIntegrity": {
+                "enable": false,
+                "validateExternalScripts": false,
+                "excludeScripts": []
+            },
+
+            "customGuard": [
+                {
+                    "name": "Custom Guard Invoked Function 1",
+                    "enable": false,
+                    "function": "custom_guard_function_1",
+                    "validate": true,
+                    "promise": false,
+//                  "invocationLocations": "",
+                    "tamperAction": "",
+                    "nonTamperAction": "",
+                    "immediateAction": false
+                },
+//              {
+//                  "name": "Custom Guard Invoked Function 2",
+//                  "enable": false,
+//                  "function": "custom_guard_function_2",
+//                  "validate": true,
+//                  "promise": false,
+//                  "invocationLocations": "",
+//                  "tamperAction": "",
+//                  "nonTamperAction": "",
+//                  "immediateAction": false
+//              }
+            ]
+        }
+    },
+
+    "targets": {
+        "target_1": {
+            "guardConfiguration": "guard_configuration_1",
+            
+//          Add your input file/directory information here.
+            "input": "input",
+//          Or you could use standard input stream as input source.
+//          "stdin": true,
+
+//          Add your bundle protection configuration here.
+//          "bundleConfiguration": {
+//              "guardConfiguration": "guard_configuration_1",
+//              "ignorePaths": [],
+//              "validateIgnorePaths": true,
+//              "subTargets": {
+//                  "subTarget": {
+//                      "guardConfiguration": "guard_configuration_2",
+//                      "ignorePaths": [],
+//                      "input": "input.js"
+//                  }
+//              }
+//          },
+
+//          Add your output file/directory information here.
+            "output": "output",
+
+//          Specify paths to be ignored from protection.
+            "ignorePaths": [],
+            "validateIgnorePaths": true,
+
+            "parseAnnotations": true,
+
+            "sourceMaps": {
+                "enable": false,
+                "mode": "hidden",
+//              "outputDirectory": ""
+            }
+        }
+    }
+}

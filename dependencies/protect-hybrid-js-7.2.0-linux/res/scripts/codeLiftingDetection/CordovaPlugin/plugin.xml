@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="PLUGIN_NAME" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<js-module name="CLASS_NAME" src="www/CLASS_NAME.js">
+		<clobbers target="cordova.plugins.CLASS_NAME" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="CLASS_NAME">
+				<param name="android-package" value="cordova.plugin.PLUGIN_NAME.CLASS_NAME" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/CLASS_NAME.java" target-dir="src/cordova/plugin/PLUGIN_NAME/CLASS_NAME" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="CLASS_NAME">
+				<param name="ios-package" value="CLASS_NAME" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/CLASS_NAME.m" />
+	</platform>
+</plugin>

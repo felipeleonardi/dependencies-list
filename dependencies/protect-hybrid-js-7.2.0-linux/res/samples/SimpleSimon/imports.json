@@ -1,0 +1,9 @@
+{
+	"securejs": {
+		"ignore" : 
+		[	
+			"startSimon",
+			"checkPassword"
+		]
+	}
+}

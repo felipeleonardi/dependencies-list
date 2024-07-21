@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="simon.js" charset="UTF-8"></script>
+  </head>
+
+<body onload="startSimon()">
+
+  <h1>Digital.ai Simple Simon Obfuscation Demo</h1>
+  <textarea id="secrets" cols="80" rows="6"></textarea>
+
+  <p>Please enter the password below to reveal the secrets</p>
+  <label for="password">Password: </label><input type="password" id="password" oninput="checkPassword()"/>
+</body>
+</html>

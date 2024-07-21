@@ -1,0 +1,4 @@
+module CLASS_NAME {
+    header "CLASS_NAME.h"
+    export *
+}

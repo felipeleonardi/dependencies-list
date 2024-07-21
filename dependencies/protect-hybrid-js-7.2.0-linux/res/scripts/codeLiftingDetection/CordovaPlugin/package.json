@@ -1,0 +1,11 @@
+{
+  "name": "PLUGIN_NAME",
+  "version": "0.0.1",
+  "cordova": {
+    "id": "PLUGIN_NAME",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

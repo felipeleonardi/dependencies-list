@@ -1,0 +1,19 @@
+Digital.ai Hybrid JavaScript Protection
+===============================
+
+'after_prepare' hook for Digital.ai Hybrid JavaScript Protection.
+
+--------------------------------------------------------------------------------------------------------
+
+To setup, make sure that protect-hybrid-js is in PATH and copy this script to the scripts directory at the root of your project.
+
+mkdir -p ${project_root}/scripts
+cp scripts/protect-hybrid-js.js ${project_root}/scripts
+
+Add the below to ${project_root}/config.xml file.
+<hook src="scripts/protect-hybrid-js.js" type="after_prepare" />
+
+--------------------------------------------------------------------------------------------------------
+
+This hook invokes protect-hybrid-js before the assets are packaged for deployment. By default, this will
+obfuscate everything in your project's 'www' folder at the deployment location.

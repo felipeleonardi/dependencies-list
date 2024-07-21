@@ -1,0 +1,17 @@
+{
+  "name": "PLUGIN_NAME",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "android",
+    "index.js"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.1",
+    "react-native": ">=0.60.0 <1.0.0"
+  },
+  "devDependencies": {
+    "react": ">=16.8.1",
+    "react-native": ">=0.60.0 <1.0.0"
+  }
+}
